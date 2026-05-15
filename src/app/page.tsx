@@ -1,4 +1,4 @@
-import HomePage from "@/components/home-page";
+import HomePage from "@/components/HomePage";
 import { ClientProvider } from "./[locale]/client-provider";
 import { setRequestLocale } from "next-intl/server";
 

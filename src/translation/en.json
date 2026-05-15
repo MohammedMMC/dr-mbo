@@ -1,6 +1,10 @@
 {
-  "welcome": "Welcome to Dr. MBO",
-  "home": "Home",
-  "about": "About",
-  "contact": "Contact"
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "books": "Books",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "name": "Dr.Mahmut Beşiroğlu"
 }

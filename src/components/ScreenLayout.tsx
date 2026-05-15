@@ -1,0 +1,23 @@
+import type { ReactNode } from "react";
+import Navbar from "@/components/Navbar";
+import Footer from "./Footer";
+
+type ScreenLayoutProps = {
+    children?: ReactNode;
+};
+
+export default function ScreenLayout({
+    children,
+}: ScreenLayoutProps) {
+    return (
+        <div className="min-h-screen flex flex-col">
+            <Navbar />
+
+            <main className="mx-auto w-full max-w-6xl px-6 py-10">
+                {children}
+            </main>
+
+            <Footer />
+        </div>
+    );
+}
