@@ -36,7 +36,7 @@ html[lang="ar"] body {
 
 nav {
   @apply relative w-full max-w-2xl bg-primary/90 px-2 py-2 sm:mt-6 mt-4
-    border-2 border-s-0 border-primary
+    border-2 border-e-0 border-primary
     rounded-s-full backdrop-blur-lg
     shadow-lg shadow-primary/20 ms-auto;
 }
