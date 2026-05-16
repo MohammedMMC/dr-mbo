@@ -12,7 +12,7 @@ export default function Navbar() {
     const [hoveredSection, setHoveredSection] = useState<string | null>(null);
 
     return (
-        <nav className="relative flex items-center justify-end p-4">
+        <nav className="relative flex items-center justify-start p-4">
             <div className="flex items-center justify-end gap-2 relative">
                 {navItems.map((item) => (
                     <a

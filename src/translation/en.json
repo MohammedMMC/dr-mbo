@@ -6,5 +6,7 @@
     "blog": "Blog",
     "contact": "Contact"
   },
-  "name": "Dr.Mahmut Beşiroğlu"
+  "name": "Dr.Mahmut Beşiroğlu",
+  "firstname": "Mahmut",
+  "lastname": "Beşiroğlu"
 }
