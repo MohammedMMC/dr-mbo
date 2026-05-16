@@ -22,6 +22,10 @@
   --font-cairo: var(--font-cairo);
 }
 
+html {
+  @apply scroll-smooth;
+}
+
 body {
   @apply bg-background text-foreground font-inter;
 }
@@ -31,10 +35,9 @@ html[lang="ar"] body {
 }
 
 nav {
-  @apply w-full max-w-2xl bg-primary/90 px-2 py-2
+  @apply relative w-full max-w-2xl bg-primary/90 px-2 py-2 sm:mt-6 mt-4
     border-2 border-s-0 border-primary
-    flex items-center justify-end gap-6
-    rounded-e-full backdrop-blur-lg mt-4
+    rounded-e-full backdrop-blur-lg
     shadow-lg shadow-primary/20;
 }
 

@@ -13,7 +13,8 @@ export default function ScreenLayout({
         <div className="min-h-screen flex flex-col">
             <Navbar />
 
-            <main className="mx-auto w-full max-w-6xl px-6 py-10">
+            <main className="mx-auto w-full px-6 py-10">
+                {/* max width: max-w-6xl */}
                 {children}
             </main>
 

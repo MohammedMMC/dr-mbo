@@ -21,6 +21,9 @@ export default function HomePage() {
           Current language: <span className="font-semibold uppercase">{locale}</span>
         </p>
       </div>
+
+      <section id="home" className="h-screen">aaaaa</section>
+      <section id="about" className="h-screen">bbbbb</section>
     </ScreenLayout>
   );
 }
