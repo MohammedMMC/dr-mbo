@@ -3,7 +3,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary: #5faedf;
+  --primary: #059089;
+  --secondary: #d16e33;
+  --text-primary: #145348;
+  --text-secondary: #cb8456;
+  --idkk: #b8ab89;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -18,6 +22,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
   --font-inter: var(--font-inter);
   --font-cairo: var(--font-cairo);
 }
@@ -27,7 +32,7 @@ html {
 }
 
 body {
-  @apply bg-background text-foreground font-inter;
+  @apply bg-background text-foreground font-inter overflow-x-hidden;
 }
 
 html[lang="ar"] body {
@@ -35,12 +40,12 @@ html[lang="ar"] body {
 }
 
 nav {
-  @apply relative w-full max-w-2xl bg-primary/90 px-2 py-2 sm:mt-6 mt-4
+  @apply relative sm:w-full w-min max-w-2xl bg-primary/90 px-2 py-2 sm:mt-6 mt-4
+    flex items-center justify-start p-4
+    sm:flex-row flex-col
+    transition-all duration-300
     border-2 border-e-0 border-primary
     rounded-s-full backdrop-blur-lg
-    shadow-lg shadow-primary/20 ms-auto;
-}
-
-nav a {
-  @apply hover:bg-white/10 text-white rounded-full px-6 py-1 transition-colors duration-200;
+    shadow-lg shadow-primary/20 ms-auto
+    z-50;
 }

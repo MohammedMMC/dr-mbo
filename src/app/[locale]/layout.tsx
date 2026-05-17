@@ -1,16 +1,8 @@
-import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
-import { locales } from "@/i18n.config";
 import { ClientProvider } from "./client-provider";
-
-export const metadata: Metadata = {
-  title: "Dr. MBO",
-  description: "Dr. MBO Website",
-};
-
-export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
-}
+import { hasLocale } from "next-intl";
+import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
 
 interface LocaleLayoutProps {
   children: React.ReactNode;
@@ -22,10 +14,9 @@ export default async function LocaleLayout({
   params,
 }: LocaleLayoutProps) {
   const { locale } = await params;
-  
+  if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
 
-  // Dynamically import messages for the current locale
   const localeMessages = await import(`@/translation/${locale}.json`).then(
     (mod) => mod.default
   );

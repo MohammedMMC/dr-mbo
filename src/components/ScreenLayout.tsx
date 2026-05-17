@@ -10,7 +10,7 @@ export default function ScreenLayout({
     children,
 }: ScreenLayoutProps) {
     return (
-        <div className="min-h-screen flex flex-col">
+        <div className="min-h-screen flex flex-col relative overflow-x-hidden">
             <Navbar />
 
             <main className="mx-auto w-full max-w-6xl px-6 py-10">

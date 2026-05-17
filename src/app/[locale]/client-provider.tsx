@@ -7,12 +7,14 @@ interface ClientProviderProps {
   children: ReactNode;
   locale: string;
   messages: Record<string, string>;
+  timeZone?: string;
 }
 
 export function ClientProvider({
   children,
   locale,
   messages,
+  timeZone = "UTC",
 }: ClientProviderProps) {
   useEffect(() => {
     document.documentElement.lang = locale;
@@ -20,7 +22,11 @@ export function ClientProvider({
   }, [locale]);
 
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
+    <NextIntlClientProvider
+      locale={locale}
+      messages={messages}
+      timeZone={timeZone}
+    >
       {children}
     </NextIntlClientProvider>
   );
