@@ -4,6 +4,7 @@ import { useLocale, useTranslations } from "next-intl";
 import ScreenLayout from "@/components/ScreenLayout";
 import Image from "next/image";
 import { routing } from "@/i18n/routing";
+import { Brain, HeartPulse, LockKeyhole, Search } from "lucide-react";
 
 export default function HomePage() {
   const t = useTranslations();
@@ -55,23 +56,60 @@ export default function HomePage() {
       </section>
 
       <section id="about" className="h-screen">bbbbb</section>
+
       <section id="books" className="relative">
-        <div className="bg-[#f3e4d1] flex sm:flex-row flex-col p-4">
+        <div className="bg-[#f3e4d1] flex sm:flex-row flex-col p-4 rounded-4xl">
           <Image
-            className="object-contain sm:w-[clamp(10rem,20vw,20rem)] w-full h-auto saturate-80"
+            className="block lg:block sm:hidden object-contain sm:w-[clamp(10rem,20vw,20rem)] w-full h-auto saturate-80 rounded-3xl"
             src="/images/books/paranoia-aleppo.jpg"
             alt={`${t("books.paranoia-aleppo.title")} book cover`}
             width={500}
             height={600}
-            loading="lazy"
+            loading="lazy" 
           />
-          <div className="p-4">
-            <h2 className="text-[clamp(2rem,5vw,3.2rem)] font-black text-[#8b1237]">{t("books.paranoia-aleppo.title")}</h2>
-            <p className="mt-2 text-base md:text-lg lg:text-xl font-semibold text-neutral-700">{t("books.paranoia-aleppo.description")}</p>
+          <div className="flex flex-col justify-between lg:ps-6 pt-2 sm:pt-0">
+            <div className="flex flex-row gap-4 lg:gap-0">
+              <Image
+                className="hidden sm:block lg:hidden row-span-2 object-contain sm:w-[clamp(10rem,20vw,20rem)] w-full h-auto saturate-80 rounded-3xl"
+                src="/images/books/paranoia-aleppo.jpg"
+                alt={`${t("books.paranoia-aleppo.title")} book cover`}
+                width={500}
+                height={600}
+                loading="lazy"
+              />
+              <div>
+                <h2 className="text-[clamp(2rem,5vw,3.2rem)] font-black text-[#8b1237]">{t("books.paranoia-aleppo.title")}</h2>
+                <p className="mt-2 text-base md:text-lg lg:text-xl font-semibold text-neutral-700">{t("books.paranoia-aleppo.description")}</p>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 sm:grid-cols-4 mt-6">
+              <div className="flex flex-col items-center text-center p-2.5">
+                <LockKeyhole strokeWidth={2} size={48} color="#8b1237" />
+                <p className="mt-2 text-sm md:text-base font-semibold text-neutral-700">{t("books.paranoia-aleppo.why.0")}</p>
+              </div>
+              <div className="flex flex-col items-center text-center p-2.5 border-s-2 border-[#8b1237]">
+                <Search strokeWidth={2} size={48} color="#8b1237" />
+                <p className="mt-2 text-sm md:text-base font-semibold text-neutral-700">{t("books.paranoia-aleppo.why.1")}</p>
+              </div>
+              <div className="flex flex-col items-center text-center p-2.5 sm:border-s-2 sm:border-[#8b1237]">
+                <HeartPulse strokeWidth={2} size={48} color="#8b1237" />
+                <p className="mt-2 text-sm md:text-base font-semibold text-neutral-700">{t("books.paranoia-aleppo.why.2")}</p>
+              </div>
+              <div className="flex flex-col items-center text-center p-2.5 border-s-2 border-[#8b1237]">
+                <Brain strokeWidth={2} size={48} color="#8b1237" />
+                <p className="mt-2 text-sm md:text-base font-semibold text-neutral-700">{t("books.paranoia-aleppo.why.3")}</p>
+              </div>
+            </div>
+
+            <a href="#" className="text-center cursor-pointer bg-[#8b1237] hover:bg-[#6a0d2a] text-white font-bold md:py-3 py-2 px-6 rounded-3xl mt-6">
+              {t("books.buy")}
+            </a>
           </div>
-          
         </div>
       </section>
+
+      <section id="blog" className="h-screen">bbbbb</section>
     </ScreenLayout>
   );
 } 
