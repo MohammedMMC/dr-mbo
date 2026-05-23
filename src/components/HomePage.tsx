@@ -46,22 +46,45 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="about" className="my-40 flex flex-col gap-6">
-        <p className="mt-2 text-base md:text-lg lg:text-xl font-bold text-neutral-700 bg-primary/30 rounded-3xl p-6 border-2 border-primary w-1/2">
-          {t("aboutme.0")}
-        </p>
-        <p className="mt-2 text-base md:text-lg lg:text-xl font-bold text-neutral-700 bg-secondary/30 rounded-3xl p-6 border-2 border-secondary w-1/2 self-end">
-          {t("aboutme.1")}
-        </p>
-        <p className="mt-2 text-base md:text-lg lg:text-xl font-bold text-neutral-700 bg-primary/30 rounded-3xl p-6 border-2 border-primary w-1/2">
-          {t("aboutme.2")}
-        </p>
-        <p className="mt-2 text-base md:text-lg lg:text-xl font-bold text-neutral-700 bg-secondary/30 rounded-3xl p-6 border-2 border-secondary w-1/2 self-end">
-          {t("aboutme.3")}
-        </p>
+      <section id="about" className="py-40">
+        <h2 className="section-title">{t("titles.whoami")}</h2>
+
+        <div className="bg-primary/30 rounded-3xl p-6 border-2 border-primary backdrop-blur-[1px] w-full">
+          <p className="mt-2 text-base md:text-lg lg:text-xl font-bold text-neutral-700">
+            {t("aboutme.0")}
+          </p>
+          <div className="w-full h-px bg-primary/50 my-4 rounded-full"></div>
+          <p className="mt-2 text-base md:text-lg font-semibold text-neutral-700">
+            {t("aboutme.1")}
+          </p>
+          <div className="flex flex-row items-center my-4">
+            <div className="w-full h-px bg-primary/50 rounded-full"></div>
+            <div className="min-w-1 h-1 bg-primary/50 mx-3 rounded-full"></div>
+            <div className="min-w-1 h-1 bg-primary/50 mx-1 rounded-full"></div>
+            <div className="min-w-1 h-1 bg-primary/50 mx-3 rounded-full"></div>
+            <div className="w-full h-px bg-primary/50 rounded-full"></div>
+          </div>
+          <p className="mt-2 text-base md:text-lg font-semibold text-neutral-700">
+            {t("aboutme.2")}
+          </p>
+          <br />
+          <p className="mt-2 text-base md:text-lg font-semibold text-neutral-700">
+            {t("aboutme.3")}
+          </p>
+          <br />
+          <p className="mt-2 text-base md:text-lg font-semibold text-neutral-700">
+            {t("aboutme.4")}
+          </p>
+          <div className="w-full h-px bg-primary/50 my-4 rounded-full"></div>
+          <p className="mt-2 text-base md:text-lg font-semibold text-neutral-700">
+            {t("aboutme.5")}
+          </p>
+        </div>
+
       </section>
 
-      <section id="books" className="my-40 relative">
+      <section id="books" className="py-40 relative">
+        <h2 className="section-title">{t("titles.books")}</h2>
         <div className="bg-[#f3e4d1] flex sm:flex-row flex-col p-4 rounded-4xl border-2 border-[#8b1237]">
           <Image
             className="block lg:block sm:hidden object-contain sm:w-[clamp(10rem,20vw,20rem)] w-full h-full my-auto saturate-80 rounded-3xl"
@@ -113,7 +136,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="blog" className="my-40">bbbbb</section>
+      <section id="blog" className="py-40">bbbbb</section>
+
+      <section id="contact" className="py-40">bbbbb</section>
+
     </ScreenLayout>
   );
 }

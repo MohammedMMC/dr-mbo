@@ -63,3 +63,13 @@ nav {
     shadow-lg shadow-primary/20 ms-auto
     z-50;
 }
+
+.section-title {
+  @apply text-4xl text-center font-bold relative text-primary
+    text-shadow-lg text-shadow-primary/20 mb-10 tracking-wide;
+}
+
+.section-title::before {
+  @apply content-[''] absolute -bottom-4 w-18 rounded-full h-1 bg-secondary left-1/2 -translate-x-1/2
+    drop-shadow-sm drop-shadow-secondary;
+}
