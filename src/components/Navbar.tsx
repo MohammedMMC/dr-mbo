@@ -1,16 +1,31 @@
 "use client";
 
 import { useLocale, useTranslations } from "next-intl";
+import { usePathname, useRouter } from "@/i18n/navigation";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import LocaleDropdown from "@/components/LocaleDropdown";
 
 const navItems = ["home", "about", "books", /* "blog", */ "contact"];
 
 export default function Navbar() {
     const locale = useLocale();
     const t = useTranslations();
+    const router = useRouter();
+    const pathname = usePathname();
     const [isOpen, setIsOpen] = useState(false);
     const [hoveredSection, setHoveredSection] = useState<string | null>(null);
+
+    const handleLocaleSelect = (nextLocale: string) => {
+        if (nextLocale === locale) {
+            setIsOpen(false);
+            return;
+        }
+
+        const hash = typeof window !== "undefined" ? window.location.hash : "";
+        setIsOpen(false);
+        router.replace(`${pathname}${hash}`, { locale: nextLocale });
+    };
 
     return (
         <nav>
@@ -54,6 +69,20 @@ export default function Navbar() {
                                 {t(`navbar.${item}`)}
                             </motion.a>
                         ))}
+                        <div className="mt-1 px-6 py-2 border-t border-white/10">
+                            <p className="text-[0.7rem] text-white/70 uppercase tracking-[0.2em]">
+                                {t("navbar.language")}
+                            </p>
+                            <div className="mt-2">
+                                <LocaleDropdown
+                                    id="mobile-language"
+                                    label={t("navbar.language")}
+                                    value={locale}
+                                    isMobile={true}
+                                    onChange={handleLocaleSelect}
+                                />
+                            </div>
+                        </div>
                     </motion.div>
                 )}
             </AnimatePresence>
@@ -77,6 +106,15 @@ export default function Navbar() {
                         {t(`navbar.${item}`)}
                     </a>
                 ))}
+                <div className="ms-3">
+                    <LocaleDropdown
+                        id="desktop-language"
+                        label={t("navbar.language")}
+                        value={locale}
+                        isMobile={false}
+                        onChange={handleLocaleSelect}
+                    />
+                </div>
             </div>
         </nav>
     );
