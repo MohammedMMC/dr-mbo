@@ -4,7 +4,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const navItems = ["home", "about", "books", "blog", "contact"];
+const navItems = ["home", "about", "books", /* "blog", */ "contact"];
 
 export default function Navbar() {
     const locale = useLocale();

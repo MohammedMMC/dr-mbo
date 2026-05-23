@@ -6,7 +6,41 @@
     "blog": "Blog",
     "contact": "İletişim"
   },
+  "books": {
+    "buy": "Hemen Kopyanı Al",
+    "paranoia-aleppo": {
+      "title": "Paranoia Aleppo",
+      "description": "Dr. Mahmut Beşiroğlu'nun romanı; Halep kentinin toplumsal dokusunda edebiyat ile psikolojiyi harmanlar. Roman, 20. yüzyılın ortalarından yeni binyılın başına uzanan önemli bir dönemi ele alır ve korku ile geleneklerin sürekli kuşku ve özdenetim halini nasıl üretebildiğini inceler.",
+      "why": [
+        "Korku ve geleneklerin, kuşku ve denetimden oluşan görünmez bir hapishaneyi nasıl kurduğunu gösterir.",
+        "Bir dönemi sosyal ve psikolojik ayrıntılarıyla ele alır.",
+        "Derin edebiyat ile titiz psikolojik analizi birleştirir.",
+        "İnsan ruhunun derinliklerine iner; bilinç ve bilinçdışı mekanizmalarını çözümler."
+      ]
+    }
+  },
+  "contact": {
+    "location": "Konum",
+    "phone": "Telefon",
+    "email": "E-posta",
+    "instagram": "Instagram"
+  },
   "name": "Dr.Mahmut Beşiroğlu",
   "firstname": "Mahmut",
-  "lastname": "Beşiroğlu"
+  "lastname": "Beşiroğlu",
+  "quote": "Aramızda Kalsın",
+  "titles": {
+    "whoami": "Ben Kimim?",
+    "books": "Kitaplarım",
+    "blog": "Blogum",
+    "contact": "İletişim"
+  },
+  "aboutme": [
+    "Ben, iç içe geçmiş haritaların bir uzantısıyım; dağlarla şehirlerin kesişiminde, tarihle insanın temasında şekillendim. Kimlik tek bir yerin sınırında bitmez, oradan geçişle başlar.",
+    "Babamın aidiyetinin uzandığı Mekke dağlarına kök salan bir kökten ve annemin ait olduğu Halep Kalesi'ne dayanan görkemli bir bellekten doğan başlangıçlar; iki ruh, iki kültür ve iki uygarlık arasında şekillendi. Bu ikisi bana aynı anda hem derinliğin hem de sürekliliğin anlamını taşıdı.",
+    "Mersin'de yaşadım; gündelik hayatın çeşitliliğini ve insanın çoğulluğunu öğrendim. Ardından Eskişehir'e geçtim; akademik deneyim düşünceyi ve yöntemi biçimlendirdi. Sonra yolculuğumu Mısır'da sürdürdüm; burada insanlık tarihi deneyim ve bilincin derinliğiyle buluşur.",
+    "Daha sonra çalışmalarım Libya ve Irak'a uzandı; farklı Arap bağlamlarında mesleki deneyimim derinleşti, insanı kültürel ve toplumsal çeşitliliği üzerinden daha geniş kavradım ve tecrübem geniş ve katmanlı bir Arap gerçekliğine açıldı.",
+    "Bu yolculuk, farklı Arap ve yabancı milletlerle derin etkileşimimi ve işimin odağı olarak insanı anlama konusundaki tam adanmışlığımı biçimlendirdi. Bu da psikolojik esnekliğime ve uyum yeteneğime yansıdı; hem insani hem de mesleki deneyimimi zenginleştirdi.",
+    "Böylece kimliğim; Toros Dağları'nın heybetinden, Türk deneyiminin genişliğinden, Doğu'nun sıcaklığından, Mısır uygarlığının sağlamlığından ve Arap dünyasının açıklığından oluştu. Tek bir yere değil; deneyim, yaşantı ve anlamla şekillenen insani bir oluş sürecine ait bir kimlik."
+  ]
 }

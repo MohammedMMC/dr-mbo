@@ -6,7 +6,41 @@
     "blog": "Blog",
     "contact": "Contact"
   },
+  "books": {
+    "buy": "Get Your Copy Now",
+    "paranoia-aleppo": {
+      "title": "Paranoia Aleppo",
+      "description": "A novel by Dr. Mahmut Beşiroğlu, blending literature and psychology, exploring the social and psychological landscape of the city of Aleppo, shedding light on a significant period spanning from the middle of the 20th century to the beginning of the 21st century, and investigating how fear and traditions can create a state of perpetual doubt and self-censorship.",
+      "why": [
+        "Discloses how fear and traditions create an invisible prison of doubt and self-censorship",
+        "Explores a significant period from the mid century to the early 21st century",
+        "Blends deep literature with precise psychological analysis",
+        "Delves into the depths of human psychology and uncovers the mechanisms of consciousness and unconsciousness"
+      ]
+    }
+  },
+  "contact": {
+    "location": "Location",
+    "phone": "Phone",
+    "email": "Email",
+    "instagram": "Instagram"
+  },
   "name": "Dr.Mahmut Beşiroğlu",
   "firstname": "Mahmut",
-  "lastname": "Beşiroğlu"
+  "lastname": "Beşiroğlu",
+  "quote": "Keep it between us",
+  "titles": {
+    "whoami": "Who Am I?",
+    "books": "My Books",
+    "blog": "My Blog",
+    "contact": "Contact Me"
+  },
+  "aboutme": [
+    "I am an extension of intersecting maps, formed at the intersection of mountains and cities, at the contact of history and humanity, where identity does not end at the boundaries of a single place, but begins from crossing them.",
+    "From roots that extend to the mountains of Mecca where my father belongs, and from a memory that goes back to the castle of Aleppo where my mother belongs, the features of beginnings have been shaped between two souls and two cultures and two civilizations, carrying meaning of depth and extension at the same time.",
+    "I lived in Mersin, where I learned about the diversity of daily life and the multiplicity of people, then moved to Sivas, a famous city, where I refined my academic experience in the features of thought and methodology, before continuing my journey in Egypt, where human history meets depth of experience and awareness.",
+    "Then my career extended to Libya and Iraq, where I deepened my professional experience within different Arab contexts, and broadened my understanding of humanity through its cultural and social diversity, opening my experience to a wide and multi-layered Arab world.",
+    "This path has formed a deep connection with various Arab and foreign nationalities, and has enriched my understanding of humanity as the core of both my professional life and career, which has reflected on my psychological resilience and ability to adapt, as well as on the richness of my human and professional experiences.",
+    "Thus, my identity has been shaped by the peaks of Mount Taurus, the breadth of Turkish experience, the warmth of the East, the solidity of Egyptian civilization, and the openness of the Arab world; an identity that does not belong to a single place but to a human condition that is formed by experience, experiment,and meaning."
+  ]
 }
