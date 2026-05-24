@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Cairo } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const FONT_INTER = Inter({
@@ -45,6 +46,8 @@ export default async function RootLayout({
       dir={locale === "ar" ? "rtl" : "ltr"}
       className={`${FONT_INTER.variable} ${FONT_CAIRO.variable} h-full antialiased`}
     >
+      <Analytics />
+      
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
