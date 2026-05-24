@@ -26,6 +26,28 @@
     "email": "Email",
     "instagram": "Instagram"
   },
+  "seo": {
+    "description": "Clinical psychologist in Mezitli, Mersin, Turkey. Author of Paranoia Aleppo and specialist in psychological care.",
+    "siteName": "Dr. MBO",
+    "imageAlt": "Dr. Mahmut Beşiroğlu portrait",
+    "keywords": [
+      "clinical psychologist",
+      "psychologist",
+      "psychotherapy",
+      "mental health",
+      "Mersin",
+      "Mezitli",
+      "Turkey",
+      "Paranoia Aleppo",
+      "Dr. Mahmut Beşiroğlu"
+    ]
+  },
+  "professional": {
+    "title": "Clinical Psychologist",
+    "degree": "Doctorate in Early Detection of Autism",
+    "membership": "Member of the Egyptian Psychological Therapists Association with membership number 1525",
+    "affiliation": "Affiliated with the Arab Psychological Professionals Union with affiliation number 3282"
+  },
   "name": "Dr.Mahmut Beşiroğlu",
   "firstname": "Mahmut",
   "lastname": "Beşiroğlu",

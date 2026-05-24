@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Cairo } from "next/font/google";
 import "./globals.css";
 
@@ -12,9 +12,20 @@ const FONT_CAIRO = Cairo({
   subsets: ["arabic"],
 });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#059089",
+  colorScheme: "light",
+};
+
 export const metadata: Metadata = {
-  title: "Dr. MBO",
-  description: "Dr. MBO Website",
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"
+  ),
+  other: {
+    "msapplication-TileColor": "#059089",
+  },
 };
 
 interface RootLayoutProps {

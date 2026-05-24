@@ -26,6 +26,28 @@
     "email": "E-posta",
     "instagram": "Instagram"
   },
+  "seo": {
+    "description": "Mezitli, Mersin, Türkiye’de klinik psikolog. Paranoia Aleppo kitabının yazarı ve psikolojik bakım uzmanı.",
+    "siteName": "Dr. MBO",
+    "imageAlt": "Dr. Mahmut Beşiroğlu portresi",
+    "keywords": [
+      "klinik psikolog",
+      "psikolog",
+      "psikoterapi",
+      "mental sağlık",
+      "Mersin",
+      "Mezitli",
+      "Türkiye",
+      "Paranoia Aleppo",
+      "Dr. Mahmut Beşiroğlu"
+    ]
+  },
+  "professional": {
+    "title": "Klinik Psikolog",
+    "degree": "Erken Teşhis Doktora",
+    "membership": "Mısır Psikolojik Terapistleri Birliği Üyesi, üye numarası 1525",
+    "affiliation": "Arap Psikolojik Profesyoneller Birliği ile bağlı, üyelik numarası 3282"
+  },
   "name": "Dr.Mahmut Beşiroğlu",
   "firstname": "Mahmut",
   "lastname": "Beşiroğlu",
