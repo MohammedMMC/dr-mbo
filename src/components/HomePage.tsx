@@ -126,7 +126,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <a href="#" className="text-center cursor-pointer bg-[#8b1237] hover:bg-[#6a0d2a] text-white font-bold md:py-3 py-2 px-6 rounded-3xl mt-6">
+            <a href="https://kashkoolbooks.com/product/%D8%A8%D8%A7%D8%B1%D8%A7%D9%86%D9%88%D9%8A%D8%A7-%D8%AD%D9%84%D8%A8" className="text-center cursor-pointer bg-[#8b1237] hover:bg-[#6a0d2a] text-white font-bold md:py-3 py-2 px-6 rounded-3xl mt-6">
               {t("books.buy")}
             </a>
           </div>
