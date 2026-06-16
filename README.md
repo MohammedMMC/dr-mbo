@@ -1,6 +1,8 @@
 # Therapist Portfolio
 
-A modern-styled portfolio website for therapists with multi-language support and a dashboard for sharing blogs.
+This website was made by a fan for a therapist who is really really good at his job. It is not an official website.
+
+It has a modern look and supports multiple languages.
 
 ## Pages
 
